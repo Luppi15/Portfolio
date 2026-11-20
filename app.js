@@ -1,10 +1,8 @@
 // This file contains the main JavaScript logic for the PWA. It initializes the application, handles user interactions, and registers the service worker.
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize the application
     console.log('PWA is ready!');
 
-    // Register the service worker
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
             navigator.serviceWorker.register('./service-worker.js')
@@ -16,6 +14,4 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
         });
     }
-
-    // Add any additional app initialization logic here
 });

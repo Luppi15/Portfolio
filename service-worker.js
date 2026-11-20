@@ -1,36 +1,32 @@
+const CACHE_NAME = 'portfolio-joaquim-v3';
+const ASSETS = [
+    './',
+    './index.html',
+    './app.js',
+    './manifest.json'
+];
+
 self.addEventListener('install', (event) => {
+    self.skipWaiting();
     event.waitUntil(
-        caches.open('my-pwa-cache').then((cache) => {
-            return cache.addAll([
-                '/',
-                '/index.html',
-                '/app.js',
-                '/manifest.json',
-                // Add any other assets you want to cache
-            ]);
-        })
+        caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS))
+    );
+});
+
+self.addEventListener('activate', (event) => {
+    event.waitUntil(
+        caches.keys().then((cacheNames) =>
+            Promise.all(
+                cacheNames
+                    .filter((name) => name !== CACHE_NAME)
+                    .map((name) => caches.delete(name))
+            )
+        ).then(() => self.clients.claim())
     );
 });
 
 self.addEventListener('fetch', (event) => {
     event.respondWith(
-        caches.match(event.request).then((response) => {
-            return response || fetch(event.request);
-        })
-    );
-});
-
-self.addEventListener('activate', (event) => {
-    const cacheWhitelist = ['my-pwa-cache'];
-    event.waitUntil(
-        caches.keys().then((cacheNames) => {
-            return Promise.all(
-                cacheNames.map((cacheName) => {
-                    if (cacheWhitelist.indexOf(cacheName) === -1) {
-                        return caches.delete(cacheName);
-                    }
-                })
-            );
-        })
+        fetch(event.request).catch(() => caches.match(event.request))
     );
 });
