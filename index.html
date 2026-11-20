@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luppi Portifolio</title>
+    <title>Luppi Portfólio — Joaquim Luppi Fernandes</title>
     <link rel="manifest" href="manifest.json">
     <script src="app.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,13 +36,14 @@
 </head>
 <body class="w-screen sm:flex sm:justify-center bg-preto">
     <div class="sm:w-4/6 lg:w-full">
+        <!-- Hero -->
         <div class="bg-preto flex flex-col pt-5 lg:flex-row lg:h-screen lg:justify-center">
           <div class="lg:w-5/12 lg:flex lg:flex-col lg:items-center xl:justify-center">
             <div class="bg-branco flex h-16 items-center justify-center w-max px-4 rounded-full m-auto lg:m-0">
               <div class="flex items-center gap-4">
                 <div class="social-button">
-                  <a href="https://www.instagram.com/_luppi.sx/profilecard/?igsh=MTJ3MjBvNG9lb2Q4dQ==" target="_blank">
-                    <button class="relative w-12 h-12 rounded-full group">
+                  <a href="https://www.instagram.com/_luppi.sx/" target="_blank" rel="noopener noreferrer">
+                    <button class="relative w-12 h-12 rounded-full group" aria-label="Instagram">
                       <div
                         class="floater w-full h-full absolute top-0 left-0 bg-violet-400 rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl"
                       ></div>
@@ -70,8 +71,8 @@
                   </a>
                 </div>
                 <div class="social-button">
-                  <a href="https://github.com/Luppi15" target="_blank">
-                  <button class="relative w-12 h-12 rounded-full group">
+                  <a href="https://github.com/Luppi15" target="_blank" rel="noopener noreferrer">
+                  <button class="relative w-12 h-12 rounded-full group" aria-label="GitHub">
                     <div
                       class="floater w-full h-full absolute top-0 left-0 bg-black rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl"
                     ></div>
@@ -95,8 +96,8 @@
                   </a>
                 </div>
                 <div class="social-button">
-                  <a href="https://www.linkedin.com/in/joaquim-luppi-2667482aa" target="_blank">
-                  <button class="relative w-12 h-12 rounded-full group">
+                  <a href="https://www.linkedin.com/in/joaquim-luppi-2667482aa" target="_blank" rel="noopener noreferrer">
+                  <button class="relative w-12 h-12 rounded-full group" aria-label="LinkedIn">
                     <div
                       class="floater w-full h-full absolute top-0 left-0 bg-blue-500 rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl"
                     ></div>
@@ -120,7 +121,7 @@
                 </a>
                 </div>
                 <div class="social-button">
-                  <button class="relative w-12 h-12 rounded-full group" onclick="copyEmail()">
+                  <button class="relative w-12 h-12 rounded-full group" onclick="copyEmail()" aria-label="E-mail">
                     <div
                       class="floater w-full h-full absolute top-0 left-0 bg-red-400 rounded-full duration-300 group-hover:-top-8 group-hover:shadow-2xl"
                     ></div>
@@ -141,11 +142,10 @@
                       </svg>
                     </div>
                   </button>
-                </a>
                 </div>
               </div>
             </div>
-            <h1 class="xl:text-[90px] text-branco uppercase font-extrabold text-7xl text-center pt-14 py-2">Web developer <br> & <br> Suporte de T.I</h1>
+            <h1 class="xl:text-[84px] text-branco uppercase font-extrabold text-6xl sm:text-7xl text-center pt-14 py-2 leading-none">Full-Stack <br> &amp; <br> Técnico em T.I</h1>
           </div>
           <div class="grid grid-cols-2 grid-rows-2 gap-1 h-min p-5 lg:p-0 lg:w-1/2">
             <div class="aspect-w-1 aspect-h-1">
@@ -163,165 +163,209 @@
           </div>
         </div>
         
+        <!-- Sobre Mim -->
         <div class="bg-preto lg:flex lg:pt-20 lg:pl-20 w-full">
           <div class="absolute uppercase font-bold vertical-text text-8xl xl:text-9xl text-branco p-4">
             About
           </div>
           <div class="pl-20 pr-5 lg:w-1/2">
-            <img class="" src="files/eu bonito.jpg" alt="">
+            <img class="" src="files/eu%20bonito.jpg" alt="Joaquim Luppi Fernandes">
           </div>
           <div class="px-4 lg:flex lg:flex-col lg:justify-end lg:w-1/2">
-            <h2 class="uppercase font-bold text-5xl xl:text-6xl text-branco pt-10 pb-5 ">sobre mim</h2>
-            <p class="text-branco text-xl xl:text-2xl text-justify lg:w-4/5">Olá! Meu nome é Joaquim Luppi Fernandes, 
-                mas pode me chamar de Luppi. Sou um desenvolvedor web de 19 anos, 
-                apaixonado por criar soluções digitais inovadoras e eficientes. Desde cedo, 
-                sempre fui fascinado pelo mundo da tecnologia e pela maneira como ela pode
-                 transformar ideias em realidade.</p>
+            <h2 class="uppercase font-bold text-5xl xl:text-6xl text-branco pt-10 pb-5">sobre mim</h2>
+            <p class="text-branco text-xl xl:text-2xl text-justify lg:w-4/5">
+              Olá! Meu nome é Joaquim Luppi Fernandes, mas pode me chamar de Luppi. Sou desenvolvedor Full-Stack, Técnico em Informática, tenho 20 anos e experiência em programação, manutenção de computadores e produção de conteúdo para o Google Discover, com atuação em parceria com o Olhar Digital. Trabalho com desenvolvimento web, bancos de dados e configuração de servidores, utilizando tecnologias como PHP, JavaScript, Python e outras linguagens.
+            </p>
           </div>
         </div>
         
+        <!-- O que eu faço -->
         <div class="pt-10 lg:flex lg:flex-row-reverse">
           <div class="absolute uppercase font-bold vertical-text text-8xl xl:text-9xl text-branco p-4">
             Work
           </div>
           <div class="lg:pr-24 pl-20 pr-5 flex flex-col space-y-5 lg:w-6/12">
-            <img src="files/tailwind.png" alt="tailwind">
-            <img src="files/php.webp" alt="">
+            <img src="files/tailwind.png" alt="Tailwind CSS">
+            <img src="files/php.webp" alt="PHP">
           </div>
           <div class="px-4 lg:flex lg:flex-col lg:justify-end items-end lg:pr-10 lg:w-1/2">
-            <h2 class="uppercase font-bold text-5xl xl:text-7xl text-branco pt-10 pb-5 ">O que eu faço</h2>
+            <h2 class="uppercase font-bold text-5xl xl:text-7xl text-branco pt-10 pb-5">O que eu faço</h2>
             <p class="text-branco text-xl xl:text-2xl text-justify lg:w-11/12">
-
-                Tenho experiência em montagem de computadores e notebooks, 
-                além de saber configurar servidores de pequeno porte, 
-                o que me permite oferecer soluções práticas e personalizadas em tecnologia. 
-                Com uma sólida formação em desenvolvimento front-end e back-end, 
-                sou comprometido em criar soluções web que sejam não apenas funcionais, 
-                mas também visualmente atraentes. Utilizo tecnologias modernas, como Tailwind CSS,
-                 para garantir designs sofisticados e responsivos que atendem perfeitamente às necessidades dos 
-                 usuários em diferentes dispositivos. No back-end, trabalho com PHP para desenvolver sistemas robustos,
-                  eficientes e seguros.</p>
+              Atuo no desenvolvimento Full-Stack criando e mantendo sites, sistemas e ferramentas web com PHP, JavaScript, Python e Java, integrados a bancos de dados SQLite e MySQL. Também trabalho com produção e otimização de conteúdo para o Google Discover e automações com WordPress e IA para grandes portais como Olhar Digital e Catraca Livre. Na área de infraestrutura de TI, tenho experiência com redes, cabeamento estruturado, configuração de servidores, instalação e manutenção de computadores e periféricos, além de controle de versão com Git e scripts Bash.
+            </p>
           </div>          
         </div>
         
+        <!-- Full-Stack -->
         <div class="pt-10 lg:flex pb-10">
           <div class="h-max absolute uppercase font-bold vertical-text text-6xl xl:text-8xl text-branco p-4">
             full-stack
           </div>
           <div class="pl-14 lg:pl-20 pr-5 flex flex-col space-y-5 lg:w-2/5">
-            <img src="files/Js-maior.jpeg" alt="tailwind">
-            <img src="files/laravel.png" alt="">
+            <img src="files/Js-maior.jpeg" alt="JavaScript">
+            <img src="files/laravel.png" alt="Laravel">
           </div>
           <div class="lg:w-3/5 lg:flex lg:flex-col lg:justify-center lg:space-y-16 lg:items-center">
             <div class="px-4 lg:w-3/5">
-              <h2 class="uppercase font-bold text-5xl xl:text-6xl text-branco pt-10 pb-5 ">front-end</h2>
+              <h2 class="uppercase font-bold text-5xl xl:text-6xl text-branco pt-10 pb-5">front-end &amp; seo</h2>
               <p class="text-branco text-xl xl:text-2xl text-justify">
-                Minha experiência em front-end inclui o uso de
-                HTML, CSS e JavaScript para criar interfaces de usuário 
-                interativas e responsivas. </p>
+                Desenvolvimento de interfaces modernas e responsivas com HTML, CSS, Tailwind CSS e JavaScript, além de produção e otimização de conteúdo para o Google Discover e automações com WordPress e IA.
+              </p>
             </div>
             <div class="px-4 lg:w-3/5">
-              <h2 class="uppercase font-bold text-5xl xl:text-6xl text-branco pt-10 pb-5 ">back-end</h2>
+              <h2 class="uppercase font-bold text-5xl xl:text-6xl text-branco pt-10 pb-5">back-end &amp; infra</h2>
               <p class="text-branco text-xl xl:text-2xl text-justify">
-                No lado do back-end, utilizo PHP, Laravel e SQLite
-                para garantir que os sistemas sejam robustos e escaláveis.</p>
+                No back-end, utilizo PHP, Laravel, Python, Java, SQLite e MySQL para construir soluções robustas e escaláveis, complementadas por Git, scripts Bash, redes e configuração de servidores.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experiência e Educação (no mesmo estilo preto e branco editorial) -->
+        <div class="bg-preto pt-14 pb-20 lg:flex lg:pl-20 w-full relative">
+          <div class="absolute left-0 uppercase font-bold vertical-text text-6xl xl:text-8xl text-branco p-4">
+            carreira
+          </div>
+          <div class="pl-20 pr-6 lg:pl-24 lg:pr-16 w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+              <h2 class="uppercase font-bold text-4xl xl:text-6xl text-branco pb-8">Experiência</h2>
+              <div class="space-y-8 border-l-2 border-branco pl-6">
+                <div>
+                  <span class="text-sm uppercase tracking-widest text-neutral-400 font-semibold">2025 – 2026</span>
+                  <h3 class="text-2xl xl:text-3xl font-bold text-branco mt-1">SEO Copywriter &amp; Google Discover | Myth.dev</h3>
+                  <p class="text-neutral-300 text-lg xl:text-xl mt-2">
+                    Criação de conteúdo e automações com WordPress e IA para grandes sites como <strong>Olhar Digital</strong> e <strong>Catraca Livre</strong>.
+                  </p>
+                </div>
+
+                <div>
+                  <span class="text-sm uppercase tracking-widest text-neutral-400 font-semibold">2023 – Atual</span>
+                  <h3 class="text-2xl xl:text-3xl font-bold text-branco mt-1">Freelancer em Desenvolvimento Web</h3>
+                  <p class="text-neutral-300 text-lg xl:text-xl mt-2">
+                    Criação e manutenção de sites e ferramentas.
+                  </p>
+                </div>
+
+                <div>
+                  <span class="text-sm uppercase tracking-widest text-neutral-400 font-semibold">2023</span>
+                  <h3 class="text-2xl xl:text-3xl font-bold text-branco mt-1">Estagiário | Escola Estadual Cora Coralina</h3>
+                  <p class="text-neutral-300 text-lg xl:text-xl mt-2">
+                    Ensino de informática básica para alunos, auxiliando no uso de computadores e ferramentas digitais.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:flex lg:flex-col lg:justify-between">
+              <div>
+                <h2 class="uppercase font-bold text-4xl xl:text-6xl text-branco pb-8">Educação</h2>
+                <div class="border-l-2 border-branco pl-6">
+                  <span class="text-sm uppercase tracking-widest text-neutral-400 font-semibold">2022 – 2024</span>
+                  <h3 class="text-2xl xl:text-3xl font-bold text-branco mt-1">Curso Técnico em Informática integrado ao ensino médio</h3>
+                  <p class="text-neutral-300 text-lg xl:text-xl mt-2">
+                    Instituto Federal de Rondônia (IFRO)
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         
-        <div class="bg-branco pt-10 flex flex-col items-center pb-5">
-          <h2 class="font-bold text-2xl pb-10 lg:text-7xl uppercase">minhas competencias: </h2>
-          <div class="lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-10 lg:h-auto lg:p-0 lg:px-20">
+        <!-- Minhas Competências (seção branca original) -->
+        <div class="bg-branco pt-10 flex flex-col items-center pb-10">
+          <h2 class="font-bold text-2xl pb-10 lg:text-7xl uppercase text-center px-4">minhas competências:</h2>
+          <div class="lg:grid lg:grid-cols-2 lg:gap-10 lg:h-auto lg:p-0 lg:px-20 space-y-8 lg:space-y-0">
             <div class="sm:flex sm:pl-5">
-                <img class="object-cover w-40 h-40 m-auto" src="files/hardware.png" alt="JavaScript">
+                <img class="object-cover w-40 h-40 m-auto" src="files/hardware.png" alt="Hardware e Infraestrutura">
                 <div class="m-auto pt-5 w-10/12 sm-m-none sm:px-5">
-                  <h3 class="font-bold text-2xl">Hardware</h3>
-                  <p class="text-justify">Montagem e configuração de hardware, 
-                    garantindo o perfeito funcionamento de computadores,
-                     notebooks e servidores de pequeno porte, com foco em desempenho e confiabilidade.</p>
-                </div>
-              </div>
-              <div class="sm:flex sm:pl-5">
-                <img class="object-cover w-40 h-40 m-auto" src="files/software.png" alt="JavaScript">
-                <div class="m-auto pt-5 w-10/12 sm-m-none sm:px-5">
-                  <h3 class="font-bold text-2xl">Software</h3>
+                  <h3 class="font-bold text-2xl">Infraestrutura &amp; Hardware</h3>
                   <p class="text-justify">
-                      Desenvolvimento e implementação de soluções de software, criando sistemas eficientes
-                       e seguros que atendem às necessidades dos usuários e proporcionam uma experiência
-                        fluida e funcional.</p>
+                    Redes, cabeamento estruturado e configuração de servidores, além de instalação e manutenção de computadores e periféricos com foco em desempenho e confiabilidade.
+                  </p>
                 </div>
-              </div>
+            </div>
             <div class="sm:flex sm:pl-5">
-              <img class="object-cover w-40 h-40 m-auto" src="files/htmlcss.png" alt="htmlcss">
+                <img class="object-cover w-40 h-40 m-auto" src="files/software.png" alt="Google Discover e SEO">
+                <div class="m-auto pt-5 w-10/12 sm-m-none sm:px-5">
+                  <h3 class="font-bold text-2xl">SEO &amp; Google Discover</h3>
+                  <p class="text-justify">
+                    Produção e otimização de conteúdo para o Google Discover e automações com WordPress e IA para grandes portais como Olhar Digital e Catraca Livre.
+                  </p>
+                </div>
+            </div>
+            <div class="sm:flex sm:pl-5">
+              <img class="object-cover w-40 h-40 m-auto" src="files/laravel-maior.jpg" alt="PHP e Laravel">
               <div class="m-auto pt-5 w-10/12 sm-m-none sm:px-5">
-                <h3 class="font-bold text-2xl">HTML & CSS</h3>
-                <p class=" text-justify">Utilizo html visando estruturação 
-                  de conteúdo web de maneira semântica 
-                  e acessível. busco utilizar CSS para estilização 
-                  de páginas web com foco em design responsivo e 
-                  experiência do usuário.</p>
+                <h3 class="font-bold text-2xl">PHP &amp; Laravel</h3>
+                <p class="text-justify">
+                  Desenvolvimento Full-Stack com PHP e Laravel para aplicações web robustas, seguras e de fácil manutenção.
+                </p>
               </div>
             </div>
             <div class="sm:flex sm:pl-5">
-              <img class="object-cover w-40 h-40 m-auto" src="files/laravel-maior.jpg" alt="laravel">
+              <img class="object-cover w-40 h-40 m-auto" src="files/JavaScript.png" alt="JavaScript e Python">
               <div class="m-auto pt-5 w-10/12 sm-m-none sm:px-5">
-                <h3 class="font-bold text-2xl">PHP e Laravel</h3>
-                <p class="text-justify">PHP: linguagem de programação  usada em funcionalidades web complexas. <br>
-                  Laravel:  Framework PHP que facilita o desenvolvimento de aplicações web com uma estrutura elegante e expressiva.</p>
+                <h3 class="font-bold text-2xl">JavaScript &amp; Python</h3>
+                <p class="text-justify">
+                  Desenvolvimento de funcionalidades dinâmicas, interativas e automações utilizando JavaScript e Python.
+                </p>
               </div>
             </div>
             <div class="sm:flex sm:pl-5">
-              <img class="object-cover w-40 h-40 m-auto" src="files/sqlite.png" alt="sqlite">
+              <img class="object-cover w-40 h-40 m-auto" src="files/sqlite.png" alt="SQLite e MySQL">
               <div class="m-auto pt-5 w-10/12 sm-m-none sm:px-5">
-                <h3 class="font-bold text-2xl">SQLite</h3>
-                <p class="text-justify">Sistema de banco de dados leve e
-                  eficiente, ideal para aplicações que
-                  precisam de um armazenamento de
-                  dados confiável e simples de
-                  administrar.</p>
+                <h3 class="font-bold text-2xl">SQLite &amp; MySQL</h3>
+                <p class="text-justify">
+                  Gerenciamento e modelagem de bancos de dados SQLite e MySQL para armazenamento confiável, eficiente e simples de administrar.
+                </p>
               </div>
             </div>
             <div class="sm:flex sm:pl-5">
-              <img class="object-cover w-40 h-40 m-auto" src="files/JavaScript.png" alt="JavaScript">
-              <div class="m-auto pt-5 w-10/12 sm-m-none sm:px-5">
-                <h3 class="font-bold text-2xl">JavaScript</h3>
-                <p class="text-justify">Desenvolvimento de funcionalidades
-                  dinâmicas e interativas, aprimorando a
-                  usabilidade do site.</p>
-              </div>
-            </div>
-            <div class="sm:flex sm:pl-5">
-              <img class="object-cover w-40 h-40 m-auto" src="files/Java.png" alt="JavaScript">
+              <img class="object-cover w-40 h-40 m-auto" src="files/Java.png" alt="Java">
               <div class="m-auto pt-5 w-10/12 sm-m-none sm:px-5">
                 <h3 class="font-bold text-2xl">Java</h3>
-                <p class="text-justify">Desenvolvimento de aplicações Java, 
-                    utilizando suas capacidades robustas para criar soluções escaláveis,
-                     eficientes e seguras, com foco em desempenho e integração com outros sistemas..</p>
+                <p class="text-justify">
+                  Desenvolvimento Full-Stack e de aplicações em Java, criando soluções escaláveis, eficientes e seguras.
+                </p>
               </div>
             </div>
             <div class="sm:flex sm:pl-5">
-              <img class="object-cover w-40 h-40 m-auto" src="files/Kotlin.svg" alt="JavaScript">
+              <img class="object-cover w-40 h-40 m-auto" src="files/htmlcss.png" alt="HTML e CSS">
               <div class="m-auto pt-5 w-10/12 sm-m-none sm:px-5">
-                <h3 class="font-bold text-2xl">Kotlin</h3>
-                <p class="text-justify">Desenvolvimento de aplicações Kotlin, 
-                    aproveitando sua sintaxe concisa e moderna para criar soluções rápidas,
-                     seguras e altamente performáticas, com foco na integração fluida e otimização de recursos.</p>
+                <h3 class="font-bold text-2xl">HTML &amp; CSS</h3>
+                <p class="text-justify">
+                  Estruturação semântica de conteúdo web com HTML e estilização com CSS e Tailwind CSS focada em responsividade e experiência do usuário.
+                </p>
               </div>
             </div>
-
+            <div class="sm:flex sm:pl-5">
+              <div class="w-40 h-40 m-auto flex-shrink-0 flex items-center justify-center bg-preto text-branco rounded-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+              </div>
+              <div class="m-auto pt-5 w-10/12 sm-m-none sm:px-5">
+                <h3 class="font-bold text-2xl">Git &amp; Bash</h3>
+                <p class="text-justify">
+                  Controle de versão com Git e uso de comandos e scripts Bash para automação de tarefas e gerenciamento de ambientes.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
+        <!-- Contato -->
         <div class="bg-preto flex flex-col pt-5 lg:flex-row lg:h-screen lg:justify-center items-center lg:space-x-20">
           <div class="grid grid-cols-2 grid-rows-2 gap-1 h-auto p-5 lg:p-0 lg:w-1/2 lg:h-min">
             <div class="aspect-w-1 aspect-h-1">
               <video class="w-full h-full object-contain" src="files/elemento-3.mp4" autoplay loop muted playsinline></video>
             </div>
             <div class="aspect-w-1 aspect-h-1">
-              <img class="w-full h-full object-contain" src="files/elemento--3.jpg" alt="elemento-1">
+              <img class="w-full h-full object-contain" src="files/elemento--3.jpg" alt="elemento-3">
             </div>
             <div class="aspect-w-1 aspect-h-1">
-              <img class="w-full h-full object-contain" src="files/elemento--4.jpg" alt="elemento-2">
+              <img class="w-full h-full object-contain" src="files/elemento--4.jpg" alt="elemento-4">
             </div>
             <div class="aspect-w-1 aspect-h-1">
               <video class="w-full h-full object-contain" src="files/elemento-4.mp4" autoplay loop muted playsinline></video>
@@ -331,9 +375,9 @@
           <div class="">
             <h1 class="xl:text-9xl text-branco uppercase font-extrabold text-7xl text-center pb-14 py-2 lg:w-min">entre em contato comigo!</h1>
             <button onclick="copyEmail()" class="m-4 h-16 w-11/12 brightness-150 dark:brightness-100 group hover:shadow-lg hover:shadow-blue-700/60 transition ease-in-out hover:scale-105 p-1 rounded-xl bg-gradient-to-br from-blue-800 via-blue-600 to-blue-800 hover:from-blue-700 hover:via-blue-800 hover:to-blue-600">
-                <div class="px-6 py-2 backdrop-blur-xl bg-black/80 rounded-lg font-bold w-full h-full flex items-center justify-center">
+                <div class="px-6 py-2 backdrop-blur-xl bg-black/80 rounded-lg font-bold w-full h-full flex items-center justify-center relative">
                   <div class="flex group-hover:text-blue-500 text-blue-600 gap-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" class="absolute left-4 w-9 h-9 stroke-blue-600 group-hover:stroke-blue-500 group-hover:stroke-{1.99}">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" class="absolute left-4 w-9 h-9 stroke-blue-600 group-hover:stroke-blue-500">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"></path>
                     </svg>
                     <span class="text-2xl">Gmail</span>
@@ -352,14 +396,14 @@
                   });
                 }
               </script>       
-            <button onclick="window.location.href='https://api.whatsapp.com/send?phone=5569992065970&text=Olá,%20eu%20vim%20%20pelo%20seu%20portifólio!'" class="m-4 h-16 w-11/12 brightness-150 dark:brightness-100 group hover:shadow-lg hover:shadow-green-700/60 transition ease-in-out hover:scale-105 p-1 rounded-xl bg-gradient-to-br from-green-800 via-green-600 to-green-800 hover:from-green-700 hover:via-green-800 hover:to-green-600">
-              <div class="px-6 py-2 backdrop-blur-xl bg-black/80 rounded-lg font-bold w-full h-full flex items-center justify-center"><div class="flex group-hover:text-green-500 text-green-600 gap-1">
+            <button onclick="window.location.href='https://api.whatsapp.com/send?phone=5569992065970&text=Olá,%20eu%20vim%20pelo%20seu%20portfólio!'" class="m-4 h-16 w-11/12 brightness-150 dark:brightness-100 group hover:shadow-lg hover:shadow-green-700/60 transition ease-in-out hover:scale-105 p-1 rounded-xl bg-gradient-to-br from-green-800 via-green-600 to-green-800 hover:from-green-700 hover:via-green-800 hover:to-green-600">
+              <div class="px-6 py-2 backdrop-blur-xl bg-black/80 rounded-lg font-bold w-full h-full flex items-center justify-center relative"><div class="flex group-hover:text-green-500 text-green-600 gap-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.8"
-                  class="absolute left-4 w-9 h-9 stroke-green-600 group-hover:stroke-green-500 group-hover:stroke-{1.99}">
+                  class="absolute left-4 w-9 h-9 stroke-green-600 group-hover:stroke-green-500">
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -369,15 +413,8 @@
               </div>
               </div>
             </button>
-
           </div>
-            
-          
         </div>
-
-
-      </div>
     </div>  
-  </div>
 </body>
 </html>

@@ -1,21 +1,21 @@
 {
-  "name": "My PWA App",
-  "short_name": "PWA App",
-  "start_url": "/",
+  "name": "Portfólio - Joaquim Luppi Fernandes",
+  "short_name": "Joaquim Luppi",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
-  "description": "Meu portfolio.",
+  "background_color": "#0b1020",
+  "theme_color": "#0b1020",
+  "description": "Portfólio de Joaquim Luppi Fernandes — Desenvolvedor Full-Stack e Técnico em Informática.",
   "icons": [
     {
-      "src": "files/elemento--1.jpg",
+      "src": "files/eu bonito.jpg",
       "sizes": "192x192",
-      "type": "image/jpg"
+      "type": "image/jpeg"
     },
     {
-      "src": "files/elemento--2.jpg",
+      "src": "files/eu bonito.jpg",
       "sizes": "512x512",
-      "type": "image/jpg"
+      "type": "image/jpeg"
     }
   ]
 }
